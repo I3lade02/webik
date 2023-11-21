@@ -1,0 +1,16 @@
+.myTable{
+background-color: #eee;
+border-collapse: collapse;
+}
+
+.myTable th{
+    background-color: black;
+    width: 75%;
+    color: white;
+    text-align: center;
+}
+
+.myTable td,th{
+    padding: 5px;
+    border: 1px solid gray;
+}
