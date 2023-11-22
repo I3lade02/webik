@@ -1,0 +1,110 @@
+body{
+    background-image: url("ezgif.com-webp-to-jpg.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+header{
+  padding: 20px;
+  text-align: center;
+}
+
+h1{
+  margin-bottom: 10px;
+  font-size: 300%;
+}
+
+a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+img{
+  height: 35px;
+  width: 35px;
+  margin-right: 5px;
+}
+
+p{
+  font-size: large;
+}
+
+.menu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  
+  .toggle-button{
+    display: none;
+  }
+  
+  .rolling-menu{
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .rolling-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .rolling-menu li{
+    margin-right: 20px;
+  }
+  
+  .rolling-menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .content{
+    margin-top: 60px;
+    padding: 20px;
+  }
+  
+  @media screen and (max-width: 768px){
+    .rolling-menu{
+      max-height: 0;
+      overflow: hidden;
+    }
+  
+  
+    .rolling-menu.open{
+      max-height: 200px;
+    }
+  
+    .toggle-button{
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: white;
+      font-size: 1.2em;
+    }
+  }
+  
+  .contact-info{
+    display: block;
+  }
+  
+  h1{
+    display: block;
+  }
