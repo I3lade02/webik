@@ -1,42 +1,3 @@
-body{
-    background-image: url("background.jpg");
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-}
-
-header{
-  padding: 20px;
-  text-align: center;
-}
-
-h1{
-  margin-bottom: 10px;
-  font-size: 300%;
-}
-
-a{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-
-img{
-  height: 35px;
-  width: 35px;
-  margin-right: 5px;
-}
-
-p{
-  font-size: large;
-}
-
 .menu-container{
     position: fixed;
     top: 0;
@@ -48,39 +9,39 @@ p{
     z-index: 1000;
   }
   
-  .toggle-button{
+.toggle-button{
     display: none;
   }
   
-  .rolling-menu{
+.rolling-menu{
     overflow: hidden;
     transition: max-height 0.3s ease-out;
   }
   
-  .rolling-menu ul{
+.rolling-menu ul{
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
   }
   
-  .rolling-menu li{
+.rolling-menu li{
     margin-right: 20px;
   }
   
-  .rolling-menu a{
+.rolling-menu a{
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 1.2em;
   }
   
-  .content{
+.content{
     margin-top: 60px;
     padding: 20px;
   }
   
-  @media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
     .rolling-menu{
       max-height: 0;
       overflow: hidden;
@@ -100,9 +61,3 @@ p{
       font-size: 1.2em;
     }
   }
-  
-  .contact-info{
-    display: block;
-  }
-  
-  

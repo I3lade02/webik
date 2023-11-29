@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O mně - Ze života studentky</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="me.css">
+    <title>O mně</title>
 </head>
 <body>
-    
+    <div class="menu-container">
+        <button class="toggle-button" onclick="toggleMenu()">Toggle Menu</button>
+        <nav class="rolling-menu">
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="where_find_me.html">Kde mě najdete</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+<script>src="script_menu.js"</script>
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="klara_web.webp" alt="logo" class="logo">
+        </a>
+    </div>
+    <div class="container">
+        <div class="left-side">
+            <h1><u>O mně</u></h1>
+            <ul>
+                <li><b>Jak už název napovídá, právě studuji. Není podstatné kde ani v jakém jsem ročníku</b></li>
+                <li><b>knihy, čaj a dobré kafe</b></li>
+                <li><b>blog jsem založila, abych se měla s kým podělit o své poznatky ze života</b></li>
+            </ul>
+        </div>
+        <div class="right-side">
+            <img src="co_te_nezabije.jpg" alt="baner">
+        </div>
+    </div>
 </body>
 </html>
