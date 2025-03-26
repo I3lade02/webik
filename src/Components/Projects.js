@@ -35,6 +35,7 @@ const Projects = () => {
                         tech={project.tech}
                         image={project.image}
                         link={project.link}
+                        data-aos="fade-up"
                     />
                 ))}
             </div>

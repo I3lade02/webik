@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Header from './Components/Header';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+//import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './Components/Projects';
+import Navbar from './Components/Navbar';
 
 const App = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <Router>
       <div>
-        <Header />
+        <Navbar />
         <main className='min-h-screen p-6'>
           <Routes>
             <Route path='/' element={<Home />} />

@@ -1,11 +1,9 @@
 
 import React from 'react';
-import projectImage1 from '../images/choki.png';
-import projectImage2 from '../images/home_cloud.png';
 
 const ProjectCard = ({ title, description, tech, image, link }) => {
     return (
-        <div className='bg-white border-slate-800 shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out'>
+        <div className='bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition duration-300 ease-in-out'>
             <img src={image} alt={title} className='w-full h-48 object-contain' />
             <div className='p-4'>
                 <h3 className='text-2xl font-semibold text-gray-900'>{title}</h3>
