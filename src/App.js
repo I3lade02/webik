@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -9,8 +9,15 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './Components/Projects';
 import Navbar from './Components/Navbar';
+import './customStyle.css';
 
 const App = () => {
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(prevState => !prevState);
+  };
 
   useEffect(() => {
     AOS.init();
@@ -18,8 +25,8 @@ const App = () => {
 
   return (
     <Router>
-      <div>
-        <Navbar />
+      <div className={darkMode ? 'dark': ''}>
+        <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         <main className='min-h-screen p-6'>
           <Routes>
             <Route path='/' element={<Home />} />

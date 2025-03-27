@@ -1,0 +1,78 @@
+/* index.css or a global styles file */
+
+/* Transition for smooth background and text color changes */
+body {
+    transition: background-color 0.6s ease, color 0.6s ease;
+  }
+  
+  /* Default background and text colors (light mode) */
+  body {
+    background-color: #ffffff;  /* Light background */
+    color: #333333;  /* Dark text */
+  }
+  
+  /* Dark Mode Styles */
+  .dark {
+    background-color: #333333;  /* Very dark background for dark mode */
+    color: #e0e0e0;  /* Light text for dark mode */
+  }
+  
+  /* Specific dark mode customizations */
+  .dark .bg-blue-500 {
+    background-color: #1e40af; /* Darker blue for navbar and buttons in dark mode */
+  }
+  
+  .dark .text-white {
+    color: #f1f1f1;  /* Lighter text in dark mode */
+  }
+  
+  .dark .bg-gray-800 {
+    background-color: #2d2d2d;  /* Dark gray background */
+  }
+  
+  .dark .bg-gray-900 {
+    background-color: #121212;  /* Darker background for sections */
+  }
+  
+  /* Dark mode header and footer styles */
+  .dark header,
+  .dark footer {
+    background-color: #1f1f1f; /* Darker background for header/footer */
+  }
+  
+  .dark .border-gray-700 {
+    border-color: #4a4a4a;  /* Darker border color */
+  }
+  
+  /* Links in dark mode */
+  .dark .text-blue-500 {
+    color: #3b82f6; /* Lighter blue for links */
+  }
+  
+  .dark .hover\:text-blue-700:hover {
+    color: #2563eb; /* Darker blue for hover effect */
+  }
+  
+  /* Dark mode card styles */
+  .dark .bg-white {
+    background-color: #2a2a2a; /* Dark background for cards */
+  }
+  
+  .dark .shadow-lg {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for cards */
+  }
+  
+  /* Dark mode button hover effects */
+  .dark .bg-blue-500:hover {
+    background-color: #1e40af; /* Darker blue when hovering over buttons */
+  }
+  
+  /* Dark mode links in nav */
+  .dark .text-gray-300 {
+    color: #121212;  /* Lighter text for nav links */
+  }
+  
+  .dark .hover\:text-white:hover {
+    color: white;  /* White text on hover */
+  }
+  
